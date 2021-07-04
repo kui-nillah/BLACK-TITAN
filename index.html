@@ -9,8 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="doc/css/index.css">
+    <link rel="stylesheet" href="doc/css/main.css">
 </head>
 
 <body>
@@ -68,9 +69,54 @@
             </div>
         </div>
     </section>
+    <!-- ABOUT SECTION ENDS -->
+
+    <!-- SERVICE SECTION STARTS -->
+    <div class="service-container">
+        <div class="service-container-wrapper">
+            <div class="service-header">
+                <h2 class="title">My services</h2>
+            </div>
+            <div class="service-content">
+
+                <div class="service-cards" data-aos="fade-right">
+                    <div class="service-icon">
+                        <img src="/doc/img/developer.svg" alt="">
+                    </div>
+                    <div class="service-desc">
+                        <h3>WEB DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="service-cards" data-aos="zoom-in">
+                    <div class="service-icon">
+                        <img src="/doc/img/vector.svg" alt="">
+                    </div>
+                    <div class="service-desc">
+                        <h3>GRAPHICS DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="service-cards" data-aos="fade-left">
+                    <div class="service-icon">
+                        <img src="/doc/img/android.svg" alt="">
+                    </div>
+                    <div class="service-desc">
+                        <h3>ANDROID DEVELOPER</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="doc/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
