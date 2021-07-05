@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ityped/1.0.3/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -87,7 +89,7 @@
             <div class="service-header">
                 <h2 class="title">My services</h2>
             </div>
-            <div class="service-content">
+            <div class="service-content row">
 
                 <div class="service-cards" data-aos="fade-right" data-aos-duration="500">
                     <div class="service-icon">
@@ -125,7 +127,7 @@
     <!-- SKILLS SECTION START -->
     <section class="wrapper" id="skills">
         <h2 class="title">Skills</h2>
-        <div class="card-wrapper max-width" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card-wrapper max-width row" data-aos="fade-up" data-aos-duration="1000">
             <div class="card">
                 <div class="circle">
                     <div class="bar"></div>
@@ -199,19 +201,109 @@
     <section class="contact-container">
         <div class="contact-container-wrapper max-width">
             <h2 class="title">Contact me</h2>
-            <div class="contact-content">
+            <div class="contact-content row">
                 <div class="contact-cards">
-                    <div class="contact-form">
-                        <form action="" method="POST">
-
+                    <div class="contact-form" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="form-header">
+                            <h2 class="form-title">Get in touch</h2>
+                        </div>
+                        <form action="" method="POST" autocomplete="off">
+                            <input type="text" name="fname" placeholder="Enter your full name" required>
+                            <br>
+                            <input type="email" name="mail" placeholder="Enter your email" required>
+                            <br>
+                            <input type="text" name="subject" placeholder="Enter your subject" required>
+                            <br>
+                            <textarea type="text" rows="5" cols="50" maxlength="300" placeholder="Enter your message here"></textarea>
+                            <br>
+                            <input type="hidden" name="hidden" autocomplete="false">
+                            <button type="submit" name="send" value="submit">SUBMIT</button>
                         </form>
                     </div>
-                    <div class="social-bar"></div>
+                    <div class="social-bar">
+
+                        <div class="icon-wrapper">
+                            <div class="icon facebook">
+                                <div class="tooltip">
+                                    Facebook
+                                </div>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </div>
+                            <div class="icon twitter">
+                                <div class="tooltip">
+                                    Twitter
+                                </div>
+                                <span><i class="fab fa-twitter"></i></span>
+                            </div>
+                            <div class="icon instagram">
+                                <div class="tooltip">
+                                    Instagram
+                                </div>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </div>
+                            <div class="icon github">
+                                <div class="tooltip">
+                                    Github
+                                </div>
+                                <span><i class="fab fa-github"></i></span>
+                            </div>
+                            <div class="icon linkedin">
+                                <div class="tooltip">
+                                    Linkedin
+                                </div>
+                                <span><i class="fab fa-linkedin"></i></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-cards"></div>
+                <div class="contact-cards">
+                    <div class="sub-cards">
+                        <div class="sub-cards-icon">
+                            <img src="/doc/img/location.svg">
+                        </div>
+                        <div class="sub-cards-desc">
+                            <h3 class="sub-title">Address.</h3><br>
+                            <p class="sub-text">Arusha, Tanzania.</p>
+                        </div>
+                    </div>
+                    <div class="sub-cards">
+                        <div class="sub-cards-icon">
+                            <img src="/doc/img/smartphone.svg">
+                        </div>
+                        <div class="sub-cards-desc">
+                            <h3 class="sub-title">Mobile number.</h3><br>
+                            <p class="sub-text">+255 62 426 1151.</p>
+                        </div>
+                    </div>
+                    <div class="sub-cards">
+                        <div class="sub-cards-icon">
+                            <img src="/doc/img/email.svg" alt="">
+                        </div>
+                        <div class="sub-cards-desc">
+                            <h3 class="sub-title">Email address.</h3><br>
+                            <p class="sub-text">Godwinnillah@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="sub-cards">
+                        <div class="sub-cards-icon">
+                            <img src="/doc/img/clock.svg" alt="">
+                        </div>
+                        <div class="sub-cards-desc">
+                            <h3 class="sub-title">Working hours</h3><br>
+                            <p class="sub-text">8:00AM - 16:00PM(MON - SAT)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- CONTACT SECTION ENDS -->
+
+    <!-- FOOTER SECTION STARTS-->
+    <footer>
+        <span>Created By <a href="#">Black Titan</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
+    <!-- FOOTER SECTION ENDS -->
 
     <script src="doc/js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
