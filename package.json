@@ -3,7 +3,11 @@
     "aos": "^2.3.4",
     "boxicons": "^2.0.7",
     "ityped": "^1.0.3",
+    "jquery-circle-progress": "^1.2.2",
     "jshint": "^2.13.0",
     "progressbar.js": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7"
   }
 }

@@ -8,6 +8,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ityped/1.0.3/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -15,6 +22,9 @@
 </head>
 
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
 
     <!-- NAVIGATION BAR SECTION -->
     <div class="navbar">
@@ -42,7 +52,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, My name is</div>
                 <div class="text-2">Godwin Nilla</div>
-                <div class="text-3">And i'm a <span>Responsive Web Designer</span></div>
+                <div class="text-3">And i'm a <span class="typing"></span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -58,7 +68,7 @@
                     <img src="doc/img/nillah.jpg">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Godwin Nilla and i'm a <span>Web Designer.</span></div>
+                    <div class="text">I'm Godwin Nilla and i'm a <span class="typing-2"></span></div>
                     <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your
                         document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click
                         Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change
@@ -72,14 +82,14 @@
     <!-- ABOUT SECTION ENDS -->
 
     <!-- SERVICE SECTION STARTS -->
-    <div class="service-container">
-        <div class="service-container-wrapper">
+    <div class="service-container" id="services">
+        <div class="service-container-wrapper max-width">
             <div class="service-header">
                 <h2 class="title">My services</h2>
             </div>
             <div class="service-content">
 
-                <div class="service-cards" data-aos="fade-right">
+                <div class="service-cards" data-aos="fade-right" data-aos-duration="500">
                     <div class="service-icon">
                         <img src="/doc/img/developer.svg" alt="">
                     </div>
@@ -89,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="service-cards" data-aos="zoom-in">
+                <div class="service-cards" data-aos="zoom-in" data-aos-duration="500">
                     <div class="service-icon">
                         <img src="/doc/img/vector.svg" alt="">
                     </div>
@@ -98,7 +108,7 @@
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-                <div class="service-cards" data-aos="fade-left">
+                <div class="service-cards" data-aos="fade-left" data-aos-duration="500">
                     <div class="service-icon">
                         <img src="/doc/img/android.svg" alt="">
                     </div>
@@ -110,7 +120,98 @@
             </div>
         </div>
     </div>
+    <!-- SERVICES SECTION ENDS -->
 
+    <!-- SKILLS SECTION START -->
+    <section class="wrapper" id="skills">
+        <h2 class="title">Skills</h2>
+        <div class="card-wrapper max-width" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">HTML, CSS & JS</div>
+            </div>
+            <div class="card js">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">JAVA, KOTLIN & C++</div>
+            </div>
+            <div class="card react">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                </div>
+                <div class="text">ADOBE PS & ILLUSTRATOR</div>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLS SECTION ENDS -->
+
+    <!-- TEAM SECTION STARTS -->
+    <!-- teams section start -->
+    <h2 class="title">My team</h2>
+    <section class="teams" id="team">
+        <h2 class="title">My team</h2>
+        <div class="max-width">
+            <div class="carousel owl-carousel">
+                <div class="card-1">
+                    <div class="box-1">
+                        <img src="/doc/img/nillah.JPG" alt="">
+                        <div class="text">GODWIN NILLA</div>
+                        <p>FRONT END WEB DESIGNER.</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="box-1">
+                        <img src="/doc/img/nillah.JPG" alt="">
+                        <div class="text">HENRY JOACHIM</div>
+                        <p>BACK END WEB DESIGNER.</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="box-1">
+                        <img src="/doc/img/nillah.JPG" alt="">
+                        <div class="text">ALBERT FERDINAND</div>
+                        <p>PROGRAMMER.</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="box-1">
+                        <img src="/doc/img/nillah.JPG" alt="">
+                        <div class="text">MAXMILLIAN</div>
+                        <p>GRAPHICS DESIGNER.</p>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="box-1">
+                        <img src="/doc/img/nillah.JPG" alt="">
+                        <div class="text">JOSEPH TESHA</div>
+                        <p>GRAPHICS DESIGNER.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-container">
+        <div class="contact-container-wrapper max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="contact-cards">
+                    <div class="contact-form">
+                        <form action="" method="POST">
+
+                        </form>
+                    </div>
+                    <div class="social-bar"></div>
+                </div>
+                <div class="contact-cards"></div>
+            </div>
+        </div>
+    </section>
 
     <script src="doc/js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
