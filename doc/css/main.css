@@ -944,6 +944,22 @@
         padding: 1rem 1rem;
     }
     
+    .social-bar a:link {
+        color: #fff;
+    }
+    
+    .social-bar a:visited {
+        color: #030303;
+    }
+    
+    .social-bar a:active {
+        color: #000000;
+    }
+    
+    .social-bar a:hover {
+        color: #fff;
+    }
+    
     .icon-wrapper {
         display: inline-flex;
         margin-top: 35px;
@@ -1025,31 +1041,31 @@
     .icon-wrapper .facebook:hover span,
     .icon-wrapper .facebook:hover .tooltip,
     .icon-wrapper .facebook:hover .tooltip:before {
-        background: #3B5999;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
     }
     
     .icon-wrapper .twitter:hover span,
     .icon-wrapper .twitter:hover .tooltip,
     .icon-wrapper .twitter:hover .tooltip:before {
-        background: #46C1F6;
+        background: linear-gradient(to right, #457fca, #5691c8);
     }
     
     .icon-wrapper .instagram:hover span,
     .icon-wrapper .instagram:hover .tooltip,
     .icon-wrapper .instagram:hover .tooltip:before {
-        background: #e1306c;
+        background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     }
     
     .icon-wrapper .github:hover span,
     .icon-wrapper .github:hover .tooltip,
     .icon-wrapper .github:hover .tooltip:before {
-        background: #333;
+        background: linear-gradient(to right, #232526, #414345);
     }
     
     .icon-wrapper .linkedin:hover span,
     .icon-wrapper .linkedin:hover .tooltip,
     .icon-wrapper .linkedin:hover .tooltip:before {
-        background: #3B5999;
+        background: linear-gradient(to right, #00d2ff, #3a7bd5);
     }
     
     .sub-cards {
