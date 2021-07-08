@@ -5,6 +5,12 @@ $(document).ready(function() {
         } else {
             $('.navbar').removeClass("sticky");
         }
+        if (this.scrollY > 500) {
+            $('.scroll-up-btn').addClass("show");
+        } else {
+            $('.scroll-up-btn').removeClass("show");
+        }
+
     });
 });
 
@@ -62,7 +68,7 @@ $('.navbar .menu li a').click(function() {
 // toggle menu/navbar script
 $('.menu-btn').click(function() {
     $('.navbar .menu').toggleClass("active");
-    $('.menu-2 i').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
 });
 
 
