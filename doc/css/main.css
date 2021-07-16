@@ -1196,19 +1196,73 @@
                     margin: 0;
                     padding: 0;
                 }
-                .wrapper {
-                    max-width: 700px;
-                }
-                .wrapper .card {
-                    width: calc(50% - 20px);
-                    margin-bottom: 20px;
-                }
-                .card-wrapper {
+                .service-container {
                     width: 100%;
+                    height: 100vh;
+                    background: transparent;
+                    padding: 1rem 1rem;
+                }
+                .service-container-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    padding: 1rem 1rem;
+                }
+                .service-content {
+                    width: 100%;
+                    height: 80%;
+                    background: transparent;
+                    padding: 1rem 1rem;
                     display: flex;
-                    flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
+                }
+                .service-cards {
+                    width: 32.5%;
+                    height: 100%;
+                    background: linear-gradient(135deg, #da4453, #89216b);
+                    padding: .5rem .5rem;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+                .service-icon {
+                    width: 100%;
+                    height: 40%;
+                    background: transparent;
+                    padding: 1rem 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .service-desc {
+                    width: 100%;
+                    height: 60%;
+                    background: transparent;
+                    padding: .5rem .5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .service-desc h3 {
+                    font-size: 16px;
+                }
+                .service-desc p {
+                    font-size: 14px;
+                }
+                .wrapper {
+                    max-width: 1000px;
+                }
+                .wrapper .card {
+                    width: calc(90% - 80px);
+                    padding: 2rem 2rem;
+                    margin-bottom: 20px;
+                }
+                .teams {
+                    margin-top: 100px;
                 }
             }
             @media (max-width: 690px) {
@@ -1557,7 +1611,7 @@
                 width: 85%;
                 height: calc(100% - 10px);
                 border-radius: 5px;
-                padding: 2rem 2rem;
+                padding: 4rem 4rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
@@ -1617,7 +1671,7 @@
                 padding: 12px 20px;
                 color: #fff;
                 text-align: center;
-                margin-top: 650px;
+                margin-top: 530px;
                 font-size: 12px;
             }
         }
@@ -1634,30 +1688,17 @@
                 font-size: 27px;
             }
             .wrapper {
-                margin-top: 200px;
+                max-width: 500px;
             }
             .wrapper .card {
-                background: #F2F3AE;
-                width: 85%;
-                height: calc(100% - 10px);
-                border-radius: 5px;
-                padding: 5rem 5rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                flex-direction: column;
-                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                -ms-border-radius: 5px;
-                -o-border-radius: 5px;
+                width: 80%;
             }
             footer {
                 background: #111;
                 padding: 12px 20px;
                 color: #fff;
                 text-align: center;
-                margin-top: 550px;
+                margin-top: 530px;
                 font-size: 12px;
             }
         }
