@@ -177,7 +177,7 @@
     
     .home-container {
         display: flex;
-        background: url("/doc/img/bunner.jpg") no-repeat;
+        background: url("/docs/img/bunner.jpg") no-repeat;
         background-position: center;
         background-size: cover;
         height: 100vh;
