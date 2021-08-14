@@ -71,6 +71,15 @@ $('.menu-btn').click(function() {
     $('.menu-btn i').toggleClass("active");
 });
 
+// pop up hire me form
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
 
 
 //Typing animation

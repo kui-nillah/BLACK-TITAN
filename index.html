@@ -55,7 +55,24 @@
                 <div class="text-1">Hello, My name is</div>
                 <div class="text-2">Godwin Nilla</div>
                 <div class="text-3">And i'm a <span class="typing"></span></div>
-                <a href="#">Hire me</a>
+                <button class="open-button" onclick="openForm()">Hire me</button>
+
+                <div class="form-popup" id="myForm">
+                    <form action=".php" class="form-container">
+                        <center>
+                            <h1 style="color: #da4453;">Hire me</h1>
+                        </center>
+
+                        <input type="text" placeholder="Your Name" name="name" required>
+                        <input type="text" placeholder="Your Email Address" name="email" required>
+
+                        <textarea name="message" placeholder="Your Enquiry" required cols="10" rows="5"></textarea>
+                        <input autocomplete="false" class="form-control" name="hidden" type="text" style="display: none;">
+
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
