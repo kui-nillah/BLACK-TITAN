@@ -1234,7 +1234,7 @@ footer span a:hover {
 
 /* RESPONSIVE MEDIA QUERY */
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (max-device-width: 1300px) {
     .home-container .max-width {
         margin-left: 0px;
     }
@@ -1250,7 +1250,7 @@ footer span a:hover {
     }
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (max-device-width: 1200px) {
     .home-container .max-width {
         margin-left: 0px;
     }
@@ -1269,7 +1269,7 @@ footer span a:hover {
 
 /* Portrait */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 991px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 991px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -1671,18 +1671,187 @@ footer span a:hover {
         margin: 0px;
         box-sizing: border-box;
     }
-    .home-container .home-content .text-1 .text-2 .text-3 {
-        left: 0;
-    }
     .open-button {
         width: 130px;
         font-size: 16px;
-        bottom: 50px;
+        bottom: 120px;
     }
     .form-popup {
         display: none;
         position: absolute;
         bottom: 10px;
+        left: 20px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+    }
+    .form-container {
+        max-width: 300px;
+        padding: 2px;
+        background-color: #F2F3AE;
+    }
+    .form-container input[type=text],
+    .form-container input[type=password] {
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #F2F3AE;
+        border-bottom: 2px solid #da4453;
+        outline: none;
+        transition: transform 0.3s;
+        -webkit-transition: transform 0.3s;
+        -moz-transition: transform 0.3s;
+        -ms-transition: transform 0.3s;
+        -o-transition: transform 0.3s;
+    }
+    .btn {
+        color: white;
+        padding: 6px 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+    .home .home-content .text-2 {
+        font-size: 25px;
+    }
+    .home .home-content .text-3 {
+        font-size: 22px;
+    }
+    .about-container .right .text {
+        font-size: 13px;
+    }
+    .about-container .about-content .right a {
+        display: inline-block;
+        background-color: #da4453;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 1px 10px;
+        margin-top: 20px;
+        border-radius: 6px;
+    }
+    .about-container .about-content .right {
+        padding: .5rem .5rem;
+    }
+    .service-cards {
+        width: 90%;
+        height: 32.5%;
+    }
+    .wrapper {
+        margin-top: 100px;
+    }
+    .wrapper .card {
+        background: #F2F3AE;
+        width: 90%;
+        height: 300px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 6rem 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .card-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    .circle .box span {
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 600;
+        transform: translate(-45%, -45%);
+        transition: all 0.1s;
+    }
+    .card .text {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .teams {
+        margin-top: 550px;
+    }
+    .contact-container {
+        margin-top: 20px;
+    }
+    .contact-form {
+        width: 100%;
+        margin-top: 50px;
+    }
+    button {
+        font-size: 12px;
+        padding: 5px;
+        width: 25%;
+    }
+    .sub-cards-icon {
+        width: 30%;
+        height: 80%;
+        padding: 1rem 1rem;
+        background: transparent;
+    }
+    .icon-wrapper {
+        display: flex;
+        margin-top: 35px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 20px 20px;
+        border-radius: 50%;
+    }
+    .bottom {
+        margin-top: 50px;
+    }
+    .about-container .about-content .right .text,
+    .wrapper .card-wrapper .left .text {
+        font-size: 19px;
+    }
+    footer {
+        background: #111;
+        padding: 12px 20px;
+        color: #fff;
+        text-align: center;
+        margin-top: 700px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .open-button {
+        width: 100px;
+        font-size: 16px;
+        bottom: 120px;
+    }
+    .form-popup {
+        display: none;
+        position: absolute;
+        bottom: 30px;
         left: 20px;
         border: 3px solid #f1f1f1;
         z-index: 9;
@@ -1736,14 +1905,14 @@ footer span a:hover {
         border-radius: 6px;
     }
     .about-container .about-content .right {
-        padding: 1rem 1rem;
+        padding: .5rem .5rem;
     }
     .wrapper {
         margin-top: 250px;
     }
     .wrapper .card {
         background: #F2F3AE;
-        width: 80%;
+        width: 95%;
         height: 250px;
         margin-top: 10px;
         border-radius: 5px;
